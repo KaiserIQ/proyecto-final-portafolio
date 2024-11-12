@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  color: #0ff;
+  background-color: #000;
+  font-family: 'Arial', sans-serif;
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
