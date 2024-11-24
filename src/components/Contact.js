@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaGithub } from 'react-icons/fa';
 
 const ContactSection = styled.section`
   padding: 50px 20px;
@@ -42,6 +43,23 @@ const ContactSection = styled.section`
   }
 `;
 
+const SocialIcons = styled.div`
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+
+  a {
+    color: #0ff;
+    font-size: 1.5em;
+    transition: color 0.3s;
+
+    &:hover {
+      color: #f0f;
+    }
+  }
+`;
+
 const Contact = () => {
   const [message, setMessage] = useState('');
 
@@ -69,6 +87,23 @@ const Contact = () => {
         />
         <button type="submit">Enviar</button>
       </form>
+      <SocialIcons>
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+          <FaFacebook />
+        </a>
+        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+          <FaTwitter />
+        </a>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+          <FaInstagram />
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+          <FaLinkedin />
+        </a>
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+          <FaGithub />
+        </a>
+      </SocialIcons>
     </ContactSection>
   );
 };
